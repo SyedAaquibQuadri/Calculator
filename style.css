@@ -1,0 +1,86 @@
+/* General body styling */
+body {
+    --value: white;
+    background-color: var(--value);
+    transition: background-color 0.3s ease;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator container styling */
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    max-width: 400px; 
+    overflow: hidden;
+}
+
+/* Display styling */
+#display {
+    width: 100%;
+    height: 80px; 
+    padding: 10px 20px; /* Increased padding to give more space around the numbers */
+    font-size: 2.3rem; /* Slightly reduced font size to accommodate padding */
+    text-align: left; /* Changed to left align the text */
+    border: none;
+    background-color: rgba(0, 0, 0, 0.13);
+    color: white;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
+    white-space: nowrap; 
+}
+
+#chang-color{
+    height: 100px;
+    width: 300px;
+    position: fixed;
+    top: 5%;
+    left: 5%
+}
+
+/* Keypad styling */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    height: 75px; 
+    border-radius: 15px; 
+    border: none;
+    background-color: grey;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+/* Button active state */
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+/* Operator buttons */
+.operator-btn {
+    background-color: orange;
+}
+
+.operator-btn:hover {
+    background-color: yellow;
+    color: black;
+}
